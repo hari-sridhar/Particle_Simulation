@@ -1,0 +1,22 @@
+## Particle Grid Initialization
+
+This program initializes a grid of particles with the following features:
+
+1. **User Input**:
+   - The number of particles is inputted by the user.
+
+2. **Randomized Initial Positions**:
+   - #Particles' initial positions are randomized but adhere to a fixed inter-particle spacing to avoid overlap.
+
+3. **Randomized Radii**:
+   - #Radii of particles are randomized within specified bounds (e.g., `min_radius` and `max_radius`).
+
+4. **Modeling and Calculation of forces acting on the particles**
+    - # The summation of forces acting on the particles describes their future position, trajectory and velocity of the particles at any instant of time
+
+### Key Steps:
+- The particles are arranged in the form of a grid.
+- The algorithm ensures no two particles overlap by maintaining a fixed inter-particle distance.
+- Both position and radii randomness are controlled within user-defined limits.
+- Force calculation is performed by solving non-linear ODEs against the particle
+
